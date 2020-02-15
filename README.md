@@ -40,17 +40,17 @@ Conway himself:
 
 https://www.youtube.com/watch?v=R9Plq-D1gEk
 
-REQUIRES:
-* Python 3.5 + 
-* numpy
-* matplotlib
-
 More on Turing Completeness:
 
 https://www.ics.uci.edu/~welling/teaching/271fall09/Turing-Machine-Life.pdf
 
-
 Deep Neural Networks can also play this game!
 
 https://arxiv.org/pdf/1809.02942.pdf
+
+
+REQUIRES to run:
+* Python 3.5 + 
+* numpy
+* matplotlib
 
