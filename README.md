@@ -9,7 +9,9 @@ High-level Intro to Conway's Game of Life:
 https://www.youtube.com/watch?v=Aq51GfPmD54
 
 Idea:
-The game is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves. It is Turing complete and can simulate a universal constructor or any other Turing machine.
+* The game is a zero-player game, meaning that its evolution is determined by its initial state. 
+* One interacts with the Game of Life by creating an initial configuration and observing how it evolves. 
+* It is Turing complete and can simulate a universal constructor or any other Turing machine.
 
 RULES
 At each step in time, the following transitions occur:
