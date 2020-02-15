@@ -39,3 +39,9 @@ https://www.youtube.com/playlist?list=PL_DEGJtvl7wtPc-ZyTq_jh0ptRjnYGaWZ
 Conway himself:
 
 https://www.youtube.com/watch?v=R9Plq-D1gEk
+
+REQUIRES:
+* Python 3.5 + 
+* numpy
+* matplotlib
+
