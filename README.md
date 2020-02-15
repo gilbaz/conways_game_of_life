@@ -48,6 +48,10 @@ Deep Neural Networks can also play this game!
 
 https://arxiv.org/pdf/1809.02942.pdf
 
+What if you did this in 3D?
+
+https://www.youtube.com/watch?v=dQJ5aEsP6Fs
+
 
 REQUIRES to run:
 * Python 3.5 + 
