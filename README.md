@@ -1,6 +1,7 @@
 # conways_game_of_life
 
 Here is a quick implementation of Conway's Game of Life
+
 (I made this in 2 hours just for fun, feel free to continue dev on it!)
 
 Wiki:
