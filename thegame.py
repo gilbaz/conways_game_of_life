@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import numpy.matlib as mat
 import matplotlib.animation as animation
 
 
@@ -56,7 +55,7 @@ class Drawer():
     def make_empty_grid(board_size, small_square_size_px):
         empty_square = np.ones((small_square_size_px, small_square_size_px)) * 0.2
         empty_square[1:-1, 1:-1] = np.zeros((small_square_size_px - 2, small_square_size_px - 2))
-        return mat.repmat(empty_square, board_size[0], board_size[1])
+        return np.tile(empty_square, board_size)
 
     @staticmethod
     def draw(state, small_square_size_px):
@@ -97,7 +96,7 @@ class Animator():
         print('animating!')
         ani = animation.ArtistAnimation(fig, img, interval=50, blit=True, repeat_delay=0)
         print('saving!')
-        ani.save('gol.mp4')
+        ani.save('output.mp4')
         print('done!')
         plt.show()
 
@@ -140,12 +139,13 @@ if __name__ == "__main__":
 
     start_world = State(world)
 
-    start_world.override_local_state((4,5),KnownCreatureFactory.create_glider())
-    start_world.override_local_state((8,9),KnownCreatureFactory.create_glider())
-    start_world.override_local_state((40,35),KnownCreatureFactory.create_tub())
-    start_world.override_local_state((40, 40), KnownCreatureFactory.create_tub())
+    start_world.override_local_state((30,30),KnownCreatureFactory.create_acorn())
 
-    # start_world.override_local_state((20,20), KnownCreatureFactory.create_acorn())
+    # start_world.override_local_state((8,9),KnownCreatureFactory.create_glider())
+    # start_world.override_local_state((40,35),KnownCreatureFactory.create_tub())
+    # start_world.override_local_state((40, 40), KnownCreatureFactory.create_tub())
+
+    start_world.override_local_state((20,20), KnownCreatureFactory.create_acorn())
 
     Animator.start_animation(start_world)
 
