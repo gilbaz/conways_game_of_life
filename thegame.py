@@ -139,7 +139,7 @@ if __name__ == "__main__":
 
     start_world = State(world)
 
-    # start_world.override_local_state((30,30),KnownCreatureFactory.create_acorn())
+    start_world.override_local_state((30,30),KnownCreatureFactory.create_acorn())
 
     start_world.override_local_state((8,9),KnownCreatureFactory.create_glider())
     start_world.override_local_state((40,35),KnownCreatureFactory.create_tub())
